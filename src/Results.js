@@ -5,11 +5,14 @@ export default function Results(props){
         return(
             <div className="row">
                 <div className="col-6">
-                    <h2>
-                        hi
-                    </h2>
+                      <h2> {props.results[0].recipe.label}</h2>
+                      <p>{props.results[0].recipe.ingredientLines}</p>
+                      <img href={props.results[0].recipe.image} />
+
                 </div>
             </div>
         );
+    } else {
+        return null;
     }
 }
