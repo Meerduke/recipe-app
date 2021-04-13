@@ -1,16 +1,26 @@
 import React from 'react';
+import Photos from './Photos';
 
 export default function Results(props){
     if (props.results){
         return(
-            <div className="row">
                 <div className="col-6">
-                      <h2> {props.results[0].recipe.label}</h2>
-                      <p>{props.results[0].recipe.ingredientLines}</p>
-                      <img href={props.results[0].recipe.image} />
-
+                      {props.results.map(function(recipe, index){
+                          return(
+                              <div key={index}>
+                              <h2>{recipe.recipe.label}</h2>
+                              {recipe.recipe.ingredientLines.map(function(ingredients, index){
+                                  return(
+                                      <p key={index}>
+                                          {ingredients}
+                                      </p>
+                                  )
+                              })}
+                              <Photos /> 
+                              </div>
+                          );
+                      })}
                 </div>
-            </div>
         );
     } else {
         return null;
