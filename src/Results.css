@@ -6,6 +6,7 @@
   padding: 40px;
   border-radius: 4px;
   max-width: 500px;
+  box-shadow: 6px 9px 20px -4px rgba(0, 0, 0, 0.37);
 }
 .Results section p {
   color: #282f44;

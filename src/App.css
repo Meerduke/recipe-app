@@ -19,3 +19,15 @@
   color: #f5d061;
   line-height: 2;
 }
+
+.App footer {
+  padding: 40px;
+  font-family: "Barlow", sans-serif;
+  padding: 30px;
+}
+
+@media (max-width: 992px) {
+  .App h1 {
+    font-size: 36px;
+  }
+}

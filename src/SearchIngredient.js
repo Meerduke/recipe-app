@@ -44,7 +44,7 @@ if(loaded){
 return (
     <div className="SearchIngredient">
         <h3>Enter your random ingredient here</h3>
-        <form onSubmit={handleSubmit} className="p-2 d-flex justify-content-evenly">
+        <form onSubmit={handleSubmit} className="d-flex justify-content-evenly" autoFocus="off">
             <input type="text" onChange={handleKeyword} defaultValue={props.defaultKeyword} />
             <button type="submit" className="btn btn-primary" >Search</button>        
         </form>

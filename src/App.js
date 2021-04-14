@@ -7,7 +7,9 @@ const App = () => {
     <div className="App">
       <div className="container-fluid hero">
       <h1>
-        THE RANDOM RECIPE GENERATOR
+        THE RANDOM
+        <br />
+        RECIPE GENERATOR
       </h1>
       <p>
         Got a random ingredient? Want to make something unusual?
@@ -16,6 +18,11 @@ const App = () => {
       </p>
       </div>
       <SearchIngredient defaultKeyword="Banana"/>
+      <footer>
+        <p>
+            <a href="https://github.com/Meerduke/recipe-app" class="text-decoration-none" target="_blank" title="Becca Murdoch's GitHub">Open-source code</a> by Becca Murdoch
+        </p>
+    </footer>
     </div>
   );
 }
