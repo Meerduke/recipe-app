@@ -20,7 +20,7 @@ const App = () => {
       <SearchIngredient defaultKeyword="Pasta"/>
       <footer>
         <p>
-            <a href="https://github.com/Meerduke/recipe-app" class="text-decoration-none" target="_blank" title="Becca Murdoch's GitHub">Open-source code</a> by Becca Murdoch
+            <a href="https://github.com/Meerduke/recipe-app" class="text-decoration-none"  rel="noreferrer" target="_blank" title="Becca Murdoch's GitHub">Open-source code</a> by Becca Murdoch
         </p>
     </footer>
     </div>
