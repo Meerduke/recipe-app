@@ -13,6 +13,8 @@ function handleRecipeSearch(response){
     setResults(response.data.hits);
 }
 
+
+
 function search(){
     const appId = '9b532b11';
     const apiKey = 'de21fbe6d9b182981ab1d310ba9a4ac7';
@@ -37,13 +39,13 @@ function load(){
 
 if(loaded){
 return (
-    <div>
+    <div className="SearchIngredient">
         <h3>hi there</h3>
         <form onSubmit={handleSubmit}>
-        <input type="text" onChange={handleKeyword} defaultValue={props.defaultKeyword}/>
-        <button type="submit" className="btn btn-primary" >Search</button>
-        <Results results={results} />
-      </form>
+            <input type="text" onChange={handleKeyword} defaultValue={props.defaultKeyword}/>
+            <button type="submit" className="btn btn-primary" >Search</button>
+            <Results results={results} />
+        </form>
     </div>
 );
 } else {

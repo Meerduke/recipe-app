@@ -5,12 +5,16 @@ const App = () => {
 
   return (
     <div className="App">
+      <div className="container-fluid hero">
       <h1>
-        Recipe Search
+        THE RANDOM RECIPE GENERATOR
       </h1>
       <p>
-        Tired of not knowing what to cook?
+        Got a random ingredient? Want to make something unusual?
+        <br />
+        Enter it into the Random Recipe Generator to find 10 weird and wonderful random recipes featuring your ingredient!
       </p>
+      </div>
       <SearchIngredient defaultKeyword="Banana"/>
     </div>
   );
