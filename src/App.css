@@ -1,11 +1,9 @@
 .App body {
   font-family: "Barlow", sans-serif;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 .App .hero {
-  background: chartreuse;
+  background: #282f44;
   padding: 40px;
 }
 
@@ -13,10 +11,11 @@
   font-size: 64px;
   text-align: center;
   margin: 40px;
+  color: #e6af2e;
 }
 
 .App p {
   text-align: center;
-  color: blue;
+  color: #f5d061;
   line-height: 2;
 }

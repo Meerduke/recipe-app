@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import axios from "axios";
 import Results from './Results';
 
+import './SearchIngredient.css';
+
+
 export default function SearchIngredient(props){
     const [results, setResults] = useState(null);
     const [keyword, setKeyword] = useState(props.defaultKeyword);
@@ -40,12 +43,12 @@ function load(){
 if(loaded){
 return (
     <div className="SearchIngredient">
-        <h3>hi there</h3>
-        <form onSubmit={handleSubmit}>
-            <input type="text" onChange={handleKeyword} defaultValue={props.defaultKeyword}/>
-            <button type="submit" className="btn btn-primary" >Search</button>
-            <Results results={results} />
+        <h3>Enter your random ingredient here</h3>
+        <form onSubmit={handleSubmit} className="p-2 d-flex justify-content-evenly">
+            <input type="text" onChange={handleKeyword} defaultValue={props.defaultKeyword} />
+            <button type="submit" className="btn btn-primary" >Search</button>        
         </form>
+        <Results results={results} />     
     </div>
 );
 } else {

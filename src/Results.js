@@ -5,11 +5,11 @@ import './Results.css';
 export default function Results(props){
     if (props.results){
         return(
-            <div className="row d-flex justify-content-evenly Results">
-                <div className="col-6 recipe-content">
+                <div className="Results">
                       {props.results.map(function(recipe, index){
                           return(
                               <div key={index}>
+                                  <section>
                                     <h2>{recipe.recipe.label}</h2>
                                     {recipe.recipe.ingredientLines.map(function(ingredients, index){
                                         return(
@@ -19,11 +19,11 @@ export default function Results(props){
                                         )
                                     })}
                                     <Photo photo={recipe.recipe} />
+                                    </section>
                               </div>
                           );
-                      })}
+                      })} 
                 </div>
-            </div>
         );
     } else {
         return null;

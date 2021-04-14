@@ -1,0 +1,16 @@
+.Results section {
+  border: 1px solid #282f44;
+  background: #f5d061;
+  color: #282f44;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 4px;
+  max-width: 500px;
+}
+.Results section p {
+  color: #282f44;
+}
+
+.Results section h2 {
+  margin-bottom: 20px;
+}
