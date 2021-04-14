@@ -17,7 +17,7 @@ const App = () => {
         Enter it into the Random Recipe Generator to find 10 weird and wonderful random recipes featuring your ingredient!
       </p>
       </div>
-      <SearchIngredient defaultKeyword="Banana"/>
+      <SearchIngredient defaultKeyword="Pasta"/>
       <footer>
         <p>
             <a href="https://github.com/Meerduke/recipe-app" class="text-decoration-none" target="_blank" title="Becca Murdoch's GitHub">Open-source code</a> by Becca Murdoch
