@@ -5,7 +5,7 @@ export default function Photo(props){
     
     return(
         <div>
-            <img src={image} alt="recipe image" className= "img-fluid rounded m-3 d-none d-md-inline"/>
+            <img src={image} alt="recipe example" className= "img-fluid rounded m-3 d-none d-md-inline"/>
         </div>
     )
 };
